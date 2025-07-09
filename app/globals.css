@@ -85,4 +85,19 @@
 .static-element {
   will-change: auto;
   transform: translateZ(0);
+/* Remover marca d'água do v0 */
+[data-v0-t="badge"],
+.v0-badge,
+a[href*="v0.dev"],
+div[class*="v0"],
+span[class*="v0"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+
+/* Remover qualquer elemento que contenha "Built with v0" */
+*:contains("Built with v0"),
+*:contains("v0.dev") {
+  display: none !important;
 }
