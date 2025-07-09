@@ -28,16 +28,14 @@
 }
 
 @layer base {
-  * {
-    @apply border-border;
-  }
+  {@apply border-border;}
   body {
     @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 }
 
-/* Otimizações de performance */
+/* Otimizações de performance /
 @layer utilities {
   .gpu-accelerated {
     transform: translateZ(0);
@@ -45,24 +43,23 @@
     perspective: 1000px;
   }
 
-  /* Transições suaves apenas onde necessário */
   .smooth-transition {
     transition: all 0.2s ease-in-out;
   }
 }
 
-/* Otimização para motion reduzido */
+/ Otimização para motion reduzido */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
-  *::after {
+  ::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
 }
 
-/* Otimização para telas de alta densidade */
+/ Otimização para telas de alta densidade /
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .blur-3xl {
     filter: blur(48px);
@@ -77,7 +74,7 @@
   }
 }
 
-/* Melhorias de performance para elementos estáticos */
+/ Melhorias de performance para elementos estáticos /
 .static-radar {
   contain: layout style paint;
 }
@@ -85,19 +82,15 @@
 .static-element {
   will-change: auto;
   transform: translateZ(0);
-/* Remover marca d'água do v0 */
+}
+
+/ ✅ Remover marca d'água do Vercel v0 /
 [data-v0-t="badge"],
 .v0-badge,
-a[href*="v0.dev"],
-div[class*="v0"],
-span[class*="v0"] {
+a[href="v0.dev"],
+div[class="v0"],
+span[class="v0"] {
   display: none !important;
   visibility: hidden !important;
   opacity: 0 !important;
-}
-
-/* Remover qualquer elemento que contenha "Built with v0" */
-*:contains("Built with v0"),
-*:contains("v0.dev") {
-  display: none !important;
 }
