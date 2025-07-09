@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Para GitHub Pages
+  // Configuração para produção
   output: 'export',
   trailingSlash: true,
   images: {
@@ -8,9 +8,6 @@ const nextConfig = {
   },
   
   // Otimizações para produção
-  
-  
-  // Compressão
   compress: true,
   
   // Headers de segurança
@@ -35,6 +32,10 @@ const nextConfig = {
             key: 'X-XSS-Protection',
             value: '1; mode=block',
           },
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
         ],
       },
     ]
@@ -50,17 +51,23 @@ const nextConfig = {
   // PWA e performance
   poweredByHeader: false,
   
-  // Redirects se necessário
+  // Redirects para domínio personalizado
   async redirects() {
-    return []
+    return [
+      {
+        source: '/home',
+        destination: '/',
+        permanent: true,
+      },
+    ]
   },
 
   // ESLint e TypeScript configurações
   eslint: {
-    ignoreDuringBuilds: true,
+    ignoreDuringBuilds: false,
   },
   typescript: {
-    ignoreBuildErrors: true,
+    ignoreBuildErrors: false,
   },
 }
 

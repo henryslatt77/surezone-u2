@@ -6,11 +6,22 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "SUREZONE - Sistema de Detecção de Arbitragem",
+  title: "SUREZONE - Sistema de Detecção de Arbitragem | Calculadora Profissional",
   description:
-    "Detecte oportunidades de arbitragem em tempo real. Nossa tecnologia de radar avançada identifica as melhores combinações para garantir lucros consistentes no mercado de apostas.",
-  keywords: ["arbitragem", "apostas", "surezone", "calculadora", "odds", "lucro garantido"],
-  authors: [{ name: "SUREZONE Team" }],
+    "🎯 SUREZONE: Sistema profissional de detecção de arbitragem em tempo real. Calcule stakes, analise ROI e maximize lucros com precisão. Radar avançado para oportunidades garantidas.",
+  keywords: [
+    "arbitragem",
+    "apostas",
+    "surezone",
+    "calculadora",
+    "odds",
+    "lucro garantido",
+    "sistema de arbitragem",
+    "calculadora de apostas",
+    "ROI apostas",
+    "radar arbitragem",
+  ],
+  authors: [{ name: "SUREZONE Team", url: "https://surezone.com.br" }],
   creator: "SUREZONE",
   publisher: "SUREZONE",
   robots: {
@@ -27,13 +38,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "pt_BR",
-    url: "https://surezone.vercel.app",
+    url: "https://surezone.com.br",
     title: "SUREZONE - Sistema de Detecção de Arbitragem",
-    description: "Detecte oportunidades de arbitragem em tempo real com nossa tecnologia de radar avançada.",
+    description:
+      "🎯 Sistema profissional de detecção de arbitragem em tempo real. Calcule stakes, analise ROI e maximize lucros.",
     siteName: "SUREZONE",
     images: [
       {
-        url: "/surezone-logo.png",
+        url: "https://surezone.com.br/surezone-logo-new.png",
         width: 1200,
         height: 630,
         alt: "SUREZONE - Sistema de Detecção de Arbitragem",
@@ -43,8 +55,10 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "SUREZONE - Sistema de Detecção de Arbitragem",
-    description: "Detecte oportunidades de arbitragem em tempo real com nossa tecnologia de radar avançada.",
-    images: ["/surezone-logo.png"],
+    description:
+      "🎯 Sistema profissional de detecção de arbitragem em tempo real. Calcule stakes, analise ROI e maximize lucros.",
+    images: ["https://surezone.com.br/surezone-logo-new.png"],
+    creator: "@surezone.br",
   },
   viewport: {
     width: "device-width",
@@ -53,6 +67,9 @@ export const metadata: Metadata = {
   },
   themeColor: "#22ff88",
   manifest: "/manifest.json",
+  alternates: {
+    canonical: "https://surezone.com.br",
+  },
     generator: 'v0.dev'
 }
 
@@ -67,6 +84,8 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <meta name="theme-color" content="#22ff88" />
+        <meta name="google-site-verification" content="your-verification-code" />
+        <link rel="canonical" href="https://surezone.com.br" />
       </head>
       <body className={inter.className}>{children}</body>
     </html>

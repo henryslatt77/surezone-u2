@@ -1,30 +1,40 @@
-# Filtro de Apostas Calculator
+# 🎯 SUREZONE - Sistema de Detecção de Arbitragem
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+## 🚀 Sobre o Projeto
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/henryluan203-2413s-projects/v0-filtro-de-apostas-calculator)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/Sobym8VbL97)
+O **SUREZONE** é um sistema profissional de detecção de arbitragem em tempo real, desenvolvido para maximizar lucros através de análises precisas de odds e cálculos automatizados de stakes.
 
-## Overview
+### ✨ Funcionalidades Principais
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+- 🎯 **Radar de Arbitragem**: Detecção automática de oportunidades
+- 📊 **Calculadora Avançada**: Cálculos precisos de stakes e ROI
+- 📈 **Planilha de Análise**: Histórico completo de operações
+- 🔄 **Compartilhamento**: Links diretos para análises
+- 📱 **Responsivo**: Funciona em todos os dispositivos
 
-## Deployment
+### 🛠️ Tecnologias
 
-Your project is live at:
+- **Next.js 14** - Framework React
+- **TypeScript** - Tipagem estática
+- **Tailwind CSS** - Estilização
+- **Radix UI** - Componentes acessíveis
+- **Lucide React** - Ícones
 
-**[https://vercel.com/henryluan203-2413s-projects/v0-filtro-de-apostas-calculator](https://vercel.com/henryluan203-2413s-projects/v0-filtro-de-apostas-calculator)**
+## 🚀 Deploy
 
-## Build your app
+### Produção
+- **URL**: https://surezone.com.br
+- **Status**: ✅ Online
+- **CDN**: Vercel Edge Network
 
-Continue building your app on:
+### Redes Sociais
+- **Instagram**: [@surezone.br](https://instagram.com/surezone.br)
+- **Telegram**: [@surezoneadm](https://t.me/surezoneadm)
 
-**[https://v0.dev/chat/projects/Sobym8VbL97](https://v0.dev/chat/projects/Sobym8VbL97)**
+## 📞 Contato
 
-## How It Works
+Para suporte técnico ou parcerias, entre em contato através das nossas redes sociais.
 
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+---
+
+**© 2024 SUREZONE - Todos os direitos reservados**
