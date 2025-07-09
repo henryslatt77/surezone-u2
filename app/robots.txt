@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://surezone.vercel.app/sitemap.xml

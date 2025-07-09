@@ -86,3 +86,52 @@
   will-change: auto;
   transform: translateZ(0);
 }
+
+/* ========================================
+   🚫 REMOVER MARCA D'ÁGUA DO V0
+   ======================================== */
+[data-v0-t="badge"],
+.v0-badge,
+a[href*="v0.dev"],
+a[href*="vercel.com/templates"],
+div[class*="v0-"],
+span[class*="v0-"],
+*[class*="built-with"],
+*[data-testid*="v0"],
+footer a[href*="v0"],
+.watermark,
+.v0-watermark {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  position: absolute !important;
+  left: -9999px !important;
+  width: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important;
+}
+
+/* Remover elementos que contenham texto específico */
+*:has-text(\"Built with v0
+"),
+*:has-text("v0.dev"),
+\
+*:has-text(\"Powered by v0
+") {
+display: none !important
+;
+\
+}\
+\
+/* Remover badges flutuantes */
+.fixed[class*="bottom"],
+.absolute[class*="bottom"] {
+  &:has(a[href*="v0"]) {
+    display: none !important;
+  }
+}
+
+/* Garantir que nenhum elemento v0 apareça */
+body *[class*="v0"]:not([class*="v0ice"]):not([class*="v0lume"]) {
+  display: none !important;
+}
